@@ -5,42 +5,50 @@
 body {
     font-family: "Poppins" , sans-serif;
     margin: 0;
-    background: url(https://images.unsplash.com/photo-1464347601390-25e2842a37f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1210&q=80) no-repeat;
-    min-height: 75vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 40%);
 }
-h1 {
-    text-decoration: dashed;
-    background-color: palevioletred;
+.quiz-container {
+    background: #fff;
+    width: 600px;
     border-radius: 10px;
-    padding: 0 2rem;
-    font-weight: lighter;
-    font-size: 4rem;
-    color: black
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    max-width: 100%;
+    overflow: hidden;
 }
-.countdown-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.quiz-header {
+    padding: 4rem;
 }
-.big-text {
-    font-weight: bold;
-    font-size: 6rem;
-    line-height: 1;
-    margin: 0 2rem;
-}
-.countdown-el {
+h2 {
+    margin: 0;
     text-align: center;
-    color: #fff;
+    padding: 1rem;
 }
-.countdown-el span {
-    font-size: 1.5rem;
-    color: aquamarine;
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+ul li label {
+    cursor: pointer;
+}
+button {
+    font-family: inherit;
+    color: white;
+    background-color: blueviolet;
+    display: block;
+    padding: 1.3rem;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(84, 14, 150);
 }
