@@ -6,44 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <title>Quiz App</title>
+    <title>Countdown Timer</title>
   </head>
   <body>
-    <div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question">Quiz question</h2>
-        <ul>
-          <li>
-            <input type="radio" id="a" name="answer" class="answer" /><label
-              id="a_text"
-              for="a"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="b" name="answer" class="answer" /><label
-              id="b_text"
-              for="b"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="c" name="answer" class="answer" /><label
-              id="c_text"
-              for="c"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="d" name="answer" class="answer" /><label
-              id="d_text"
-              for="d"
-              >Question</label
-            >
-          </li>
-        </ul>
+    <h1>Happy Birthday To You</h1>
+    <div class="countdown-container">
+      <div class="countdown-el days-c">
+        <p class="big-text" id="days">0</p>
+        <span>days</span>
       </div>
-      <button id="submit">submit</button>
+      <div class="countdown-el hours-c">
+        <p class="big-text" id="hours">0</p>
+        <span>hours</span>
+      </div>
+      <div class="countdown-el minutes-c">
+        <p class="big-text" id="mins">0</p>
+        <span>mins</span>
+      </div>
+      <div class="countdown-el seconds-c">
+        <p class="big-text" id="seconds">0</p>
+        <span>seconds</span>
+      </div>
     </div>
   </body>
 </html>
