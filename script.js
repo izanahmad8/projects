@@ -36,7 +36,7 @@ const quizData = [
         correct : 'b',
     }, { 
         question : 'The full form of CSS is?',
-        a : 'casting-cough style sheets',
+        a : 'casting style sheets',
         b : 'camel-cone style shows',
         c : 'concatinate -casting style sheets',
         d : 'cascading style sheets',
