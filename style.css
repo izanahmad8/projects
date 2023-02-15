@@ -1,56 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
-    font-family: "Poppins" , sans-serif;
-    background: url(https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80) no-repeat;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+  background-color: #3b3b98;
+  color: #fff;
+  font-family: 'Mulish', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
-.quiz-container {
-    background: rgb(224, 224, 224);
-    width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-    max-width: 100%;
-    overflow: hidden;
-}
-.quiz-header {
-    padding: 4rem;
-}
+
 h2 {
-    margin: 0;
-    text-align: center;
-    padding: 1rem;
+  margin: 10px 0 20px;
+  text-align: center;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
+
+.container {
+  background-color: #23235d;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
 }
-ul li {
-    margin: 1rem 0;
-    font-size: 1.2rem;
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
 }
-ul li label {
-    cursor: pointer;
-    font-weight: 50%;
+
+.result-container #result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
 }
-button {
-    font-family: inherit;
-    color: white;
-    background-color: blueviolet;
-    display: block;
-    padding: 1.3rem;
-    border: none;
-    width: 100%;
-    cursor: pointer;
+
+.result-container .btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
 }
-button:hover {
-    background-color: rgb(102, 25, 174)
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
 }

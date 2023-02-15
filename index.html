@@ -6,44 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <title>Quiz App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <title>Password Generator</title>
   </head>
   <body>
-    <div class="quiz-container" id="quiz">
-      <div class="quiz-header">
-        <h2 id="question">Quiz question</h2>
-        <ul>
-          <li>
-            <input type="radio" id="a" name="answer" class="answer" /><label
-              id="a_text"
-              for="a"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="b" name="answer" class="answer" /><label
-              id="b_text"
-              for="b"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="c" name="answer" class="answer" /><label
-              id="c_text"
-              for="c"
-              >Question</label
-            >
-          </li>
-          <li>
-            <input type="radio" id="d" name="answer" class="answer" /><label
-              id="d_text"
-              for="d"
-              >Question</label
-            >
-          </li>
-        </ul>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
       </div>
-      <button id="submit">submit</button>
+      <div class="settings">
+        <div class="setting">
+          <label>Password Length</label>
+          <input
+            type="number"
+            id="length"
+            min="4"
+            max="20"
+            placeholder="4-20"
+          />
+        </div>
+        <div class="setting">
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="uppercase" />
+        </div>
+        <div class="setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lowercase" />
+        </div>
+        <div class="setting">
+          <label>Include numbers</label>
+          <input type="checkbox" id="numbers" />
+        </div>
+        <div class="setting">
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbols" />
+        </div>
+      </div>
+      <button class="btn btn-large" id="generate">Generate Password</button>
     </div>
   </body>
 </html>
